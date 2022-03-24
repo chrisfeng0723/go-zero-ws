@@ -1,0 +1,28 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.dylib
+
+# Test binary, build with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+*.DS_Store
+/cmd/server/server
+/cmd/server/server/data
+/release
+/internal/app/test/data
+/tmp
+
+# IDE configs
+.idea
+.idea/*
+.vscode
+.vscode/*
+
+.air.toml
+.air.conf
+go.sum
