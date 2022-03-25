@@ -1,0 +1,27 @@
+syntax = "v1"
+
+info(
+	title: "type title here"
+	desc: "type desc here"
+	author: "type author here"
+	email: "type email here"
+	version: "type version here"
+)
+
+type (
+	Request {
+		Id int `json:"id"`
+	}
+
+	Reponse {
+		Content int `json:"content"`
+	}
+)
+
+service wsgateway {
+	@handler ws
+	get /ws
+	
+	@handler hello
+	get / (Request) returns(Reponse)
+}
